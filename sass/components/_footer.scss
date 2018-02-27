@@ -1,0 +1,30 @@
+/*============================================================================
+// Styling for the footer
+============================================================================*/
+.footer {
+    height: 400px;
+    position: relative;
+    z-index: 3;
+
+    @include respond(phone) {
+        height: 200px;
+    }
+
+    &__text {
+        position: relative;
+        top: 20rem;
+        text-align: center;
+        color: $color-white;
+        font-size: 1.5rem;
+        z-index: 4;
+
+        @include respond(phone) {
+            top: 10rem;
+        }
+    }
+    
+    &__link {
+        color: $color-secondary-light;
+        z-index: 3;
+    }   
+}

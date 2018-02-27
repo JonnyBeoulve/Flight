@@ -1,0 +1,29 @@
+/*============================================================================
+// Styling for the navigation button and its functionality
+============================================================================*/
+.navigation {
+    background: url(../img/flight-logo.png);
+    position: fixed;
+    height: 7rem;
+    width: 7rem;
+    object-fit: contain;
+    top: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    z-index: 9999;
+    box-shadow: 0 1rem 3rem rgba($color-black, .2);
+    cursor: pointer;
+
+    @include respond(tablet) {
+        height: 0rem;
+        width: 0rem;
+    }
+    @include respond(phone) {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

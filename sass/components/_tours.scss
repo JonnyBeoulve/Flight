@@ -1,0 +1,84 @@
+/*============================================================================
+// Styling for the tours section
+============================================================================*/
+.tour-package {
+    position: relative;
+    height: 40rem;
+    background-color: $color-white;
+    border-radius: 3px;
+    box-shadow: 0 3rem 6rem rgba($color-black, .3);
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.00);
+    }
+    
+    &__bg {
+        background-size: cover;
+        height: 15rem;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-tertiary-dark);
+
+        @include respond(tablet) {
+            height: 12rem;
+        }
+        @include respond(phone) {
+            height: 15rem;
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 100px;
+        color: $color-white;
+        position: absolute;
+        top: 1.5rem;
+        right: 0rem;
+        width: 100%;
+
+        @include respond(tablet) {
+            line-height: normal;
+        }
+        @include respond(phone) {
+            line-height: 100px;
+        }
+
+        &-price {
+            visibility: hidden;
+
+            &:hover {
+                visibility: visible;
+            }
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        @include respond(tablet) {
+            padding: 1.2rem;
+        }
+        @include respond(phone) {
+            padding: 3rem;
+        }
+
+        ul {
+            list-style: none;
+            width: 100%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+}

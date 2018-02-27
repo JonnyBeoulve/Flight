@@ -1,0 +1,44 @@
+/*============================================================================
+// Styling for the guide section
+============================================================================*/
+.guide {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 3rem 6rem rgba($color-black, .3);
+    padding: 6rem;
+    padding-left: 7rem;
+    font-size: $default-font-size;
+
+    @include respond(tablet) {
+        padding: 2rem;
+    }
+    @include respond(phone) {
+        padding: 2rem;
+    }
+
+    &__img {
+        display: block;
+        object-fit: cover;
+        height: 25rem;
+        width: 40rem;
+        border-radius: 3px;
+
+        @include respond(tablet) {
+            height: auto;
+            width: 100%;
+        }
+        @include respond(phone) {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        margin: 2vh 0 0 0;
+    }
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.00);
+    }
+}
