@@ -8,6 +8,7 @@
     box-shadow: 0 3rem 6rem rgba($color-black, .3);
     padding: 6rem;
     padding-left: 7rem;
+    transition: transform .3s;
     font-size: $default-font-size;
 
     @include respond(tablet) {
