@@ -15,6 +15,8 @@ http://www.jonathanleack.com/flight/index.html
 ## Notes
 I am currently building Flight Architect, a React-based tours builder for this website that will allow users to customize their package prior to launch.
 
+https://github.com/JonnyBeoulve/Flight-Architect
+
 Also note that this is an in-development project. Below are some of the upcoming additions:
 
 * Add animations to Tours section along with pricing information
