@@ -13,9 +13,10 @@ http://www.jonathanleack.com/flight/index.html
 * SCSS
 
 ## Notes
-This is an in-development project. Below are some of the upcoming additions:
+I am currently building Flight Architect, a React-based tours builder for this website that will allow users to customize their package prior to launch.
 
-* Responsive styling
+Also note that this is an in-development project. Below are some of the upcoming additions:
+
 * Add animations to Tours section along with pricing information
 * Completed footer
 * Navigation
