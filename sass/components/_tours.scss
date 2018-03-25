@@ -102,12 +102,12 @@
         line-height: 0px;
 
         @include respond(phone) {
-            width: 180px;
+            width: 220px;
+            font-size: 1em;
         }
 
         &:hover {
             background-color: $color-secondary-light;
-            cursor: pointer;
         }
     }
 }

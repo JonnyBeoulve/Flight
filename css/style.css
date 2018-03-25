@@ -509,6 +509,9 @@ body {
   font-size: 2em;
   padding: 15px 30px 15px 30px;
   line-height: 0px; }
+  @media only screen and (max-width: 37.5em) {
+    .form__btn {
+      font-size: 1em; } }
   .form__btn:hover {
     background-color: #e68134;
     cursor: pointer; }
@@ -692,10 +695,10 @@ body {
     line-height: 0px; }
     @media only screen and (max-width: 37.5em) {
       .tour-package__btn {
-        width: 180px; } }
+        width: 220px;
+        font-size: 1em; } }
     .tour-package__btn:hover {
-      background-color: #e68134;
-      cursor: pointer; }
+      background-color: #e68134; }
 
 /*============================================================================
 // Stling for general grid spacing of divs
