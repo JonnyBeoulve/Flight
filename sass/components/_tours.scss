@@ -82,4 +82,32 @@
             }
         }
     }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: 260px;
+        text-align: center;
+        height: 4rem;
+        border-radius: 3px;
+        color: white;
+        background-color: $color-secondary-dark;
+        box-shadow: 0 3rem 6rem rgba($color-black, .3);
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid $color-secondary-dark;
+        font-size: 2em;
+        padding: 15px 30px 15px 30px;
+        line-height: 0px;
+
+        @include respond(phone) {
+            width: 180px;
+        }
+
+        &:hover {
+            background-color: $color-secondary-light;
+            cursor: pointer;
+        }
+    }
 }
