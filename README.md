@@ -1,5 +1,5 @@
 # Flight
-This project is for a fictional private space travel company called Flight. The website was built using HTML and SCSS to demonstrate intermediate and advanced level front-end web development techniques.
+This project is for a fictional private space travel company called Flight. The website was built using HTML and SCSS to demonstrate intermediate and advanced level front-end web development techniques. I'm currently working on an interactive React element for the site called Flight Architect.
 
 ## How to Use
 Simply open 'index.html' to view the project locally.
