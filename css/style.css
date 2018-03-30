@@ -172,7 +172,7 @@ body {
     .about-img {
       margin: 0; } }
   .about-img__photo {
-    width: 100%;
+    width: 90%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     position: absolute;
