@@ -6,7 +6,7 @@ Simply open 'index.html' to view the project locally.
 
 You can also view a production version (that currently only supports large screen sizes) here:
 
-http://www.jonathanleack.com/flight/index.html
+http://www.jonathanleack.com/flight/
 
 ## Programming
 * HTML
