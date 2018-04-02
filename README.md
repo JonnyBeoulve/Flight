@@ -10,6 +10,7 @@ http://www.jonathanleack.com/flight/
 
 ## Programming
 * HTML
+* CSS
 * SCSS
 
 ## Notes
