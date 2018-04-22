@@ -11,6 +11,10 @@
     position: relative;
     z-index: 2;
 
+    @include respond(phone) {
+      display: none;
+    }
+
     body {
       min-height: 100vh;
       background: linear-gradient(to bottom, $midgrey 0%, $midgrey 70%, $white 100%);
@@ -19,16 +23,13 @@
     
     .rocket {
       position: absolute;
-      top: 3vh;
+      top: 6vh;
       width: 80px;
       left: 50%;
 
       @include respond(tablet) {
         top: 8vh;
         left: 35%;
-      }
-      @include respond(phone) {
-        top: 1vh;
       }
 
       .rocket-body {
@@ -100,7 +101,7 @@
         top: 90%;
         width: 28px;
         background: linear-gradient(to bottom, transparent 10%, $white 100%);
-        height: 122px;
+        height: 91px;
         left: calc(50% - 14px);
         animation: exhaust 0.2s infinite;
       }

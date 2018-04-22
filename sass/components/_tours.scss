@@ -8,6 +8,7 @@
     border-radius: 3px;
     box-shadow: 0 3rem 6rem rgba($color-black, .3);
     transition: transform .3s;
+    z-index: 2;
 
     &:hover {
         transform: translateY(-1rem) scale(1.00);
@@ -19,6 +20,7 @@
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         background-image: linear-gradient(to right, $color-primary-dark, $color-tertiary-dark);
+        z-index: 2;
 
         @include respond(tablet) {
             height: 12rem;
@@ -39,6 +41,7 @@
         top: 1.5rem;
         right: 0rem;
         width: 100%;
+        z-index: 2;
 
         @include respond(tablet) {
             line-height: normal;
@@ -103,7 +106,8 @@
 
         @include respond(phone) {
             width: 220px;
-            font-size: 1em;
+            font-size: 1.5em;
+            padding: 10px 20px 10px 20px;
         }
 
         &:hover {

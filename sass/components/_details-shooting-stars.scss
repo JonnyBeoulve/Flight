@@ -11,7 +11,7 @@
     animation-name: particleAnimation;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    z-index: 2;
+    z-index: 1;
 
     @include respond(tablet) {
         z-index: 0;
