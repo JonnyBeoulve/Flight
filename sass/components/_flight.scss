@@ -1,7 +1,7 @@
 /*============================================================================
-// Styling for the tours section
+// Styling for the flight section
 ============================================================================*/
-.tour-package {
+.flight-package {
     position: relative;
     height: 42rem;
     background-color: $color-white;
@@ -48,14 +48,6 @@
         }
         @include respond(phone) {
             line-height: 100px;
-        }
-
-        &-price {
-            visibility: hidden;
-
-            &:hover {
-                visibility: visible;
-            }
         }
     }
 

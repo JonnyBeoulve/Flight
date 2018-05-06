@@ -58,7 +58,7 @@ body {
 // Styling for the default body font
 ============================================================================*/
 body {
-  font-family: "Space Mono", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #666; }
@@ -469,6 +469,93 @@ body {
     background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.4) 100%); }
 
 /*============================================================================
+// Styling for the flight section
+============================================================================*/
+.flight-package {
+  position: relative;
+  height: 42rem;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+  transition: transform .3s;
+  z-index: 2; }
+  .flight-package:hover {
+    transform: translateY(-1rem) scale(1); }
+  .flight-package__bg {
+    background-size: cover;
+    height: 15rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image: linear-gradient(to right, #0e4981, #6d005e);
+    z-index: 2; }
+    @media only screen and (max-width: 75em) {
+      .flight-package__bg {
+        height: 12rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .flight-package__bg {
+        height: 15rem; } }
+  .flight-package__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 0rem;
+    width: 100%;
+    z-index: 2; }
+    @media only screen and (max-width: 75em) {
+      .flight-package__heading {
+        line-height: normal; } }
+    @media only screen and (max-width: 37.5em) {
+      .flight-package__heading {
+        line-height: 100px; } }
+  .flight-package__details {
+    padding: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .flight-package__details {
+        padding: 1.2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .flight-package__details {
+        padding: 3rem; } }
+    .flight-package__details ul {
+      list-style: none;
+      width: 100%;
+      margin: 0 auto; }
+      .flight-package__details ul li {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 1rem 0 1rem 0; }
+        .flight-package__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  .flight-package__btn {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    text-align: center;
+    height: 4rem;
+    border-radius: 3px;
+    color: white;
+    background-color: #e06000;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #e06000;
+    font-size: 2em;
+    padding: 15px 30px 15px 30px;
+    line-height: 0px; }
+    @media only screen and (max-width: 37.5em) {
+      .flight-package__btn {
+        width: 220px;
+        font-size: 1.5em;
+        padding: 10px 20px 10px 20px; } }
+    .flight-package__btn:hover {
+      background-color: #e68134; }
+
+/*============================================================================
 // Styling for the footer
 ============================================================================*/
 .footer {
@@ -496,6 +583,7 @@ body {
 // Styling for the contact form
 ============================================================================*/
 .form__header {
+  line-height: 1.4;
   text-align: center; }
 
 .form__input {
@@ -558,7 +646,7 @@ body {
     display: block;
     object-fit: cover;
     height: 25rem;
-    width: 40rem;
+    width: 100%;
     border-radius: 3px; }
     @media only screen and (max-width: 75em) {
       .guide__img {
@@ -621,97 +709,6 @@ body {
       width: 0rem; } }
   .navigation:hover {
     transform: scale(1.05); }
-
-/*============================================================================
-// Styling for the tours section
-============================================================================*/
-.tour-package {
-  position: relative;
-  height: 42rem;
-  background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
-  transition: transform .3s;
-  z-index: 2; }
-  .tour-package:hover {
-    transform: translateY(-1rem) scale(1); }
-  .tour-package__bg {
-    background-size: cover;
-    height: 15rem;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-image: linear-gradient(to right, #0e4981, #6d005e);
-    z-index: 2; }
-    @media only screen and (max-width: 75em) {
-      .tour-package__bg {
-        height: 12rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .tour-package__bg {
-        height: 15rem; } }
-  .tour-package__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 100px;
-    color: #fff;
-    position: absolute;
-    top: 1.5rem;
-    right: 0rem;
-    width: 100%;
-    z-index: 2; }
-    @media only screen and (max-width: 75em) {
-      .tour-package__heading {
-        line-height: normal; } }
-    @media only screen and (max-width: 37.5em) {
-      .tour-package__heading {
-        line-height: 100px; } }
-    .tour-package__heading-price {
-      visibility: hidden; }
-      .tour-package__heading-price:hover {
-        visibility: visible; }
-  .tour-package__details {
-    padding: 3rem; }
-    @media only screen and (max-width: 75em) {
-      .tour-package__details {
-        padding: 1.2rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .tour-package__details {
-        padding: 3rem; } }
-    .tour-package__details ul {
-      list-style: none;
-      width: 100%;
-      margin: 0 auto; }
-      .tour-package__details ul li {
-        text-align: center;
-        font-size: 1.4rem;
-        padding: 1rem 0 1rem 0; }
-        .tour-package__details ul li:not(:last-child) {
-          border-bottom: 1px solid #eee; }
-  .tour-package__btn {
-    display: block;
-    margin: 0 auto;
-    width: 260px;
-    text-align: center;
-    height: 4rem;
-    border-radius: 3px;
-    color: white;
-    background-color: #e06000;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    outline: none;
-    cursor: pointer;
-    border: 1px solid #e06000;
-    font-size: 2em;
-    padding: 15px 30px 15px 30px;
-    line-height: 0px; }
-    @media only screen and (max-width: 37.5em) {
-      .tour-package__btn {
-        width: 220px;
-        font-size: 1.5em;
-        padding: 10px 20px 10px 20px; } }
-    .tour-package__btn:hover {
-      background-color: #e68134; }
 
 /*============================================================================
 // Stling for general grid spacing of divs
@@ -826,7 +823,7 @@ body {
     .section-guide {
       padding: 15rem 0 0 0; } }
 
-.section-tours {
+.section-flight {
   background-image: url(../img/flight-tours-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -834,16 +831,16 @@ body {
   position: relative;
   z-index: 2;
   padding: 15rem 0; }
-  .section-tours a {
+  .section-flight a {
     text-decoration: none; }
   @media only screen and (max-width: 75em) {
-    .section-tours {
+    .section-flight {
       height: 100%;
       padding: 5rem 0;
       background-attachment: scroll;
       background-size: cover; } }
   @media only screen and (max-width: 37.5em) {
-    .section-tours {
+    .section-flight {
       height: 100%;
       padding: 5rem 0;
       background-attachment: scroll;
