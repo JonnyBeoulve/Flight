@@ -2,49 +2,49 @@
 // Styiing for the image used in the about section
 ========================================================================*/
 .about-img {
-    position: relative;
+  position: relative;
+
+  @include respond(tablet) {
+    margin: 5rem;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+
+  &__photo {
+    width: 90%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 1);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+    margin: 6vh 0 0 0;
+    -webkit-filter: brightness(50%);
 
     @include respond(tablet) {
-        margin: 5rem;
+      width: 80%;
     }
     @include respond(phone) {
-        display: none;
+      width: 100%;
     }
 
-    &__photo {
-        width: 90%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, 1);
-        border-radius: 2px;
-        position: absolute;
-        z-index: 1;
-        transition: all .2s;
-        outline-offset: 2rem;
-        margin: 6vh 0 0 0;
-        -webkit-filter: brightness(50%);
+    &--p1 {
+      left: 5rem;
+      top: -2rem;
 
-        @include respond(tablet) {
-            width: 80%;
-        }
-        @include respond(phone) {
-            width: 100%;
-        }
-
-        &--p1 {
-            left: 5rem;
-            top: -2rem;
-
-            @include respond(tablet) {
-                left: 0;
-                top: 0;
-            }
-            @include respond(phone) {
-                left: 0;
-                top: 0;
-              }
-        }
-
-        &:hover {
-            -webkit-filter: brightness(200%);
-        }
+      @include respond(tablet) {
+        left: 0;
+        top: 0;
+      }
+      @include respond(phone) {
+        left: 0;
+        top: 0;
+      }
     }
+
+    &:hover {
+      -webkit-filter: brightness(200%);
+    }
+  }
 }

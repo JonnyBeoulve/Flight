@@ -2,22 +2,22 @@
 // Text animation stylings used throughout the page
 ============================================================================*/
 @keyframes moveInTop {
-    0% {
-        opacity: 0;
-        transform: translateY(-10rem);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translate(0rem);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0rem);
+  }
 }
 
 @keyframes particleAnimation {
-    from { 
-        left: -100px; 
-    }
-    to { 
-        left: calc( 100% + 100px ); 
-    }
+  from {
+    left: -100px;
+  }
+  to {
+    left: calc(100% + 100px);
+  }
 }
